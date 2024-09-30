@@ -95,16 +95,17 @@ def addFecha(equipos,fechas):
         año = int(input('Ingrese el año: '))
         fecha = (dia, mes, año)
         fech.fecha(dia,mes, año)
+        cle.clearScreen()
         resultado = input("Ingrese el resultado del partido (Goles equipo 1 - Goles equipo 2): ")
-        print(f"Partido agregado: {equipos[equipo1][0]} vs {equipos[equipo2][0]} - Fecha: {fecha} - Resultado: {resultado}")        
+        print(f"Partido agregado: {equipos[equipo1]['nombre']} vs {equipos[equipo2]['nombre']} - Fecha: {fecha} - Resultado: {resultado}")        
         if hasattr(addFecha, "fechas"):
             fechas = addFecha.fechas
         else:
             addFecha.fechas = []
         
         fechas.append({
-        "equipo1": equipos[equipo1][0],
-        "equipo2": equipos[equipo2][0],
+        "equipo1": equipos[equipo1]['nombre'],
+        "equipo2": equipos[equipo2]['nombre'],
         "fecha": fecha,
         "resultado": resultado
         })

@@ -20,17 +20,21 @@ def mirarJugadores(equipos):
                 JUGADORES
             """)
         for jugador in equipo['jugadores']:
-            print(f"  {e+1} Nombre del jugador: {jugador['nombre']}")
+            e=+1
+            print(f"  {e} Nombre del jugador: {jugador['nombre']}")
             print(f"  - Posición: {jugador['posicion']}")
             print(f"  - Número: {jugador['numero']}")
             print(f"  - faltas: {jugador['faltas']}")
-            print(f"  - rojas: {jugador['ropjas']}")
+            print(f"  - rojas: {jugador['rojas']}")
             print(f"  - amarillas: {jugador['amarillas']}")
         print("""
                 PLANTEL
             """)
+        e = 0
         for plantel in equipo['plantel']:
-            print(f"  {i}. nombre del {plantel['labor']}, {plantel['nombre']}")
+            e=+1
+            print(f"  {e}. nombre del {plantel['labor']}: {plantel['nombre']}")
+        print('')
     print('')
     print('presione para salir:')
     input('')

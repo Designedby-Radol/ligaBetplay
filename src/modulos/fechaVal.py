@@ -16,9 +16,9 @@ def esFechaValida(dia, mes, año):
 
 def fecha(dia, mes, año):
     if esFechaValida(dia, mes, año):
-        print('La fecha es válida')
+        input('La fecha es válida')
     else:
-        print('La fecha no es válida')
+        input('La fecha no es válida')
     return
 
 
