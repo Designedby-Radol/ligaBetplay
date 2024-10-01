@@ -17,7 +17,7 @@ equipos = [
             'faltas' : 3,
             }
     },
-        {
+    {
         'nombre': real,
         'jugadores':{
             'nombreJugador': 'juan',
